@@ -6,7 +6,8 @@ from discord import app_commands
 intents = discord.Intents.default()
 bot = discord.Client(intents=intents)
 base = app_commands.CommandTree(bot)
-hypixelApiOAuth = {'Authorization' : 'Bearer {1f49f071-cf58-4f77-a710-5f4a8ae06c7a}'}
+hypixelApiOAuth = {'Authorization' : 'Bearer {api_Token}'}
+botToken = 'token'
 
 
 # Main part of the bot
@@ -64,4 +65,4 @@ async def mayor(interaction):
     
     await interaction.response.send_message(embed=electionEmbed)
 
-bot.run('MTA2ODEyOTIzNzU5MDA5Mzg5NA.GnSfiA.KApS_OU3v729tiwvKn1-NBrAjQasyw6eRKHi7g')
+bot.run(f'{botToken}')
