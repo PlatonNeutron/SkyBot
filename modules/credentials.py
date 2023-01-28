@@ -1,0 +1,2 @@
+hypixelApiOAuth = {'Authorization' : 'Bearer {}'}
+botToken = ''
